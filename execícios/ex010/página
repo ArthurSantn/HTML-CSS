@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Site de Jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bem-vindo ao Meu Site de Jogos!</h1>
+    <div id="jogo-container">
+        <!-- Área do jogo será renderizada aqui -->
+    </div>
+    <script src="jogo.js"></script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#jogo-container {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+// Variáveis do jogo
+var pontuacao = 0;
+var tempoRestante = 60;
+
+// Função para iniciar o jogo
+function iniciarJogo() {
+    // Lógica do jogo aqui
+}
+
+// Função para atualizar a tela do jogo
+function atualizarTela() {
+    // Atualiza a pontuação e o tempo na tela
+    document.getElementById("jogo-container").innerHTML = "Pontuação: " + pontuacao + "<br>Tempo Restante: " + tempoRestante + "s";
+}
+
+// Função para encerrar o jogo
+function encerrarJogo() {
+    // Lógica para encerrar o jogo
+}
+
+// Inicia o jogo quando a página carrega
+window.onload = function() {
+    iniciarJogo();
+}

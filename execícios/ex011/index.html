@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Em Diferentes Dispositivos</title>
+</head>
+<body>
+    <h1>Testando agora imagens em dispositivos</h1>
+    <h2>òia</h2>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="Imagens/G.png" alt="Imagen Grande">
+    </picture>
+    <picture>
+        <source media="(max-width: 850px)" srcset="Imagens/caféP.png.jpg" type="image/jpg">
+        <source media="(Max-width: 1050px)" srcset="Imagens/caféCP.png.jpg" type="image/jpg">
+        <img src="Imagens/caféG.png.jpg" alt="Chícara de Café">
+    </picture>
+    <h1>Finalmente Áudio</h1>
+    <h2>Se ligue</h2>
+        <audio preload="metadata" controls autoplay loop>
+            <source src="midias/ＬＯＶＥ(MP3_320K).mp3"  type="audio/mpeg">
+            <source src="midias/ＬＯＶＥ(MP3_320K).ogg" type="audio/ogg">
+            <source src="midias/ＬＯＶＥ(MP3_320K).wav" type="audio/wav">
+            <p>Seu navegador não suporta áudio KKKKKKKKKKKKK <a href="midias/ＬＯＶＥ(MP3_320K).mp3">Baixar</a></p>
+        </audio>
+
+</body>
+</html>

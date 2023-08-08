@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixa</title>
+    <style>
+        body{
+            background-color: darkslategrey;
+        }
+        /*
+        Para o uso das shorthands de:
+        BORDER
+        PADDING
+        MARGIN
+        OUTLINE
+        */
+        h1{
+            display: inline;
+            background-color: lightblue;
+            width: 300px;
+            height: 300px;
+/*
+Ordem de Border -> width, style, color
+*/
+            border: 5px solid aquamarine;
+/*
+Ordem (horário) do Padding -> Top, Right, bottom, left
+ou, ao se colocar apenas duas medidas, será a primeira top e bottom, e a segunda right e left.
+*/
+            padding: 5px 20px;
+/*
+Ordem de Margin (horária) -> Top, Right, bottom, left
+*/
+            margin: 8px auto 8px auto;
+/*
+Ordem do Outline -> width, style, color. 
+*/
+            outline: 5px dashed white;
+        }
+        h1:hover{
+            color: aliceblue;
+        }
+        p{
+            color: aliceblue;
+        }
+        a{
+            display: block;
+            background-color: aquamarine;
+            border-style: solid;
+            border-color: aquamarine;
+            padding: 5px;
+            border-width: 10px;
+            border-radius: 15px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Box-Level</h1>
+    <p>Parágrafos representam bem o estilo Box-Level, e <a href="#">links exemplificam bem o inline-level</a></p>
+    <a href="caixa2.html">2</a>
+</body>
+</html>

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'alblack';
+    src: url(fonts/ltblack.ttf) format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'fredoka';
+    src: url(fonts/fredoka.ttf) format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --fonte-título: 'alblack', Arial, Helvetica, sans-serif;
+    --fonte-texto: 'fredoka', Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-family: var(--fonte-título);
+    font-variant: small-caps;
+    font-size: 8.4vw;
+    letter-spacing: 3px;
+}
+
+header >p{
+    padding-top: 28px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header >p >a {
+    text-decoration: none;
+    color: #606B73;
+}
+
+header >p >a:hover, footer> p> a:hover {
+    color: rgb(30, 194, 30);
+    transition-duration: 200ms;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;                          
+    line-height: 2em;
+    padding-left: 40px;
+    font-size: 2.3vw;
+    font-weight: bolder;
+}
+
+p.texto {
+    font-family: var(--fonte-texto);
+}
+
+section#img1 {
+    background-image: url('imagens/livro1.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section#img2 {
+    background-image: url('imagens/mato1.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section.branco {
+    background-color: white;
+}
+
+section.preto {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    box-shadow: inset 2px 2px 10px 0px black;
+    background-size: cover;
+}
+
+section.preto> p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.397);
+    padding: 10px;
+    text-shadow: 1px 1px 8px black;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 1.2vw;
+    padding: 15px;
+}
+
+footer> p> a{
+    text-decoration: none;
+    color: white;
+}

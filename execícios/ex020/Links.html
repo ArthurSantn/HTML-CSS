@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="shortcut icon" href="favicon/flor-super-mario.png" type="image/png">
+    <style>
+
+        /*
+
+        SELETORES PERSONALIZADOS
+        
+        # = ID
+        . = Class
+        : = Pseudoclass
+        :: = Pseudoelement
+        > = Children
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        a{
+            color: aquamarine;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: aqua;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:active{
+            color: blueviolet;
+        }
+
+        .links::before{
+            content: ' ☀ ';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(0, 0, 0);
+        }
+
+        .links::after{
+            content: ' ☁ ';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a class="links" href="https://www.youtube.com/@klotes9067" target="_blank" rel="external">Canal do Youtube</a></li>
+        <li><a class="links" href="https://youtu.be/yEg2MPX1ljI" target="_blank" rel="external">Vídeo</a></li>
+        <li><a class="links" href="https://youtu.be/KYu0YmAzbik" target="_blank" rel="external">Playlist</a></li>
+    </ul>
+    <a href="pseudoclasse.html">1</a>
+    <a href="divs.html">2</a>
+</body>
+</html>

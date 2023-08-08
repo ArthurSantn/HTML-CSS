@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="shortcut icon" href="favicon/excel.png" type="image/png">
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+                font-weight: bolder;
+                text-align: center;
+                font-size: 25px;
+                padding: 25px;
+                background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: rgb(63, 76, 80);
+            color: white;
+        }
+
+        thead > tr > th {
+                position: sticky;
+                top: 0;
+                background-color: rgb(63, 76, 80);
+                top: -2px;
+        }
+
+        tbody > tr:nth-child(2n) {
+                background-color: lightgray;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        th, td {
+            border: 1px solid black;
+            height: 50px;
+        }
+
+        td.Estado {
+            font-weight: bolder;
+            padding-left: 10px;
+        }
+
+        td.numero {
+            text-align: right;
+            padding-right: 10px;
+            color: rgb(0, 116, 248);
+            font-weight: bold;
+        }
+
+        td#total {
+            text-align: right;
+            padding-right: 10px;
+            color: palegoldenrod;
+            font-weight: bolder;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Uso de tabelas semânticas</h1>
+    
+    <table>
+
+        <caption>População dos estados brasileiros</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style=" width: 120px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="Estado">São Paulo</td>
+                <td class="numero">44 420 459</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Minas Gerais</td>
+                    <td class="numero">20 538 718</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Rio de Janeiro</td>
+                    <td class="numero">16 054 524</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Bahia</td>
+                    <td class="numero">14 136 417</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Paraná</td>
+                    <td class="numero">11 443 208</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Rio Grande do Sul</td>
+                    <td class="numero">10 880 506</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Pernambuco</td>
+                    <td class="numero">9 058 155</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Ceará</td>
+                    <td class="numero">8 791 688</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Pará</td>
+                    <td class="numero">8 116 132</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Santa Catarina</td>
+                    <td class="numero">7 609 601</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Goiás</td>
+                    <td class="numero">7 055 228</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Maranhão</td>
+                    <td class="numero">6 775 152</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Paraíba</td>
+                    <td class="numero">3 974 495</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Amazonas</td>
+                    <td class="numero">3 941 175</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Espírito Santo</td>
+                    <td class="numero">3 833 486</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Mato Grosso</td>
+                    <td class="numero">3 658 813</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Rio Grande do Norte</td>
+                    <td class="numero">3 302 406</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Piauí</td>
+                    <td class="numero">3 269 200</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Alagoas</td>
+                    <td class="numero">3 127 511</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Distrito Federal</td>
+                    <td class="numero">2 817 068</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Mato Grosso do Sul</td>
+                    <td class="numero">2 756 700</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Sergipe</td>
+                    <td class="numero">2 209 558</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Rondônia</td>
+                    <td class="numero">1 581 016</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Tocantins</td>
+                    <td class="numero">1 511 459</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Acre</td>
+                    <td class="numero">830 026</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Amapá</td>
+                    <td class="numero">733 508</td>
+            </tr>
+            <tr>
+                    <td class="Estado">Roraima</td>
+                    <td class="numero">636 303</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td id="total">214 300 000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p style="margin-left: 200px; margin-right: 200px; text-align: justify; ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quos. Nesciunt nobis obcaecati, unde perferendis voluptatem facere totam quasi temporibus, fugiat omnis, doloremque provident nihil minus et pariatur aspernatur saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sed quod repellendus officia aut quia fuga, incidunt in beatae sequi rerum! Minus voluptates doloribus nihil animi magnam vel, natus rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequuntur sunt doloremque earum, ducimus eius laborum magni sint dolor quis! Animi aperiam maiores cupiditate, alias aliquid natus perferendis odit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, aperiam! Id sit sapiente, aliquam accusamus ducimus nam officia delectus repudiandae. Suscipit necessitatibus aliquam corporis quod quisquam reiciendis aut labore ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ut voluptates ipsa sunt id numquam fugiat, dolores obcaecati facere exercitationem doloribus inventore cumque quibusdam dolor alias ipsam earum, porro maiores? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quos. Nesciunt nobis obcaecati, unde perferendis voluptatem facere totam quasi temporibus, fugiat omnis, doloremque provident nihil minus et pariatur aspernatur saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sed quod repellendus officia aut quia fuga, incidunt in beatae sequi rerum! Minus voluptates doloribus nihil animi magnam vel, natus rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequuntur sunt doloremque earum, ducimus eius laborum magni sint dolor quis! Animi aperiam maiores cupiditate, alias aliquid natus perferendis odit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, aperiam! Id sit sapiente, aliquam accusamus ducimus nam officia delectus repudiandae. Suscipit necessitatibus aliquam corporis quod quisquam reiciendis aut labore ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ut voluptates ipsa sunt id numquam fugiat, dolores obcaecati facere exercitationem doloribus inventore cumque quibusdam dolor alias ipsam earum, porro maiores? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quos. Nesciunt nobis obcaecati, unde perferendis voluptatem facere totam quasi temporibus, fugiat omnis, doloremque provident nihil minus et pariatur aspernatur saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sed quod repellendus officia aut quia fuga, incidunt in beatae sequi rerum! Minus voluptates doloribus nihil animi magnam vel, natus rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequuntur sunt doloremque earum, ducimus eius laborum magni sint dolor quis! Animi aperiam maiores cupiditate, alias aliquid natus perferendis odit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, aperiam! Id sit sapiente, aliquam accusamus ducimus nam officia delectus repudiandae. Suscipit necessitatibus aliquam corporis quod quisquam reiciendis aut labore ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ut voluptates ipsa sunt id numquam fugiat, dolores obcaecati facere exercitationem doloribus inventore cumque quibusdam dolor alias ipsam earum, porro maiores? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quos. Nesciunt nobis obcaecati, unde perferendis voluptatem facere totam quasi temporibus, fugiat omnis, doloremque provident nihil minus et pariatur aspernatur saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sed quod repellendus officia aut quia fuga, incidunt in beatae sequi rerum! Minus voluptates doloribus nihil animi magnam vel, natus rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequuntur sunt doloremque earum, ducimus eius laborum magni sint dolor quis! Animi aperiam maiores cupiditate, alias aliquid natus perferendis odit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, aperiam! Id sit sapiente, aliquam accusamus ducimus nam officia delectus repudiandae. Suscipit necessitatibus aliquam corporis quod quisquam reiciendis aut labore ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ut voluptates ipsa sunt id numquam fugiat, dolores obcaecati facere exercitationem doloribus inventore cumque quibusdam dolor alias ipsam earum, porro maiores? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quos. Nesciunt nobis obcaecati, unde perferendis voluptatem facere totam quasi temporibus, fugiat omnis, doloremque provident nihil minus et pariatur aspernatur saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sed quod repellendus officia aut quia fuga, incidunt in beatae sequi rerum! Minus voluptates doloribus nihil animi magnam vel, natus rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequuntur sunt doloremque earum, ducimus eius laborum magni sint dolor quis! Animi aperiam maiores cupiditate, alias aliquid natus perferendis odit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, aperiam! Id sit sapiente, aliquam accusamus ducimus nam officia delectus repudiandae. Suscipit necessitatibus aliquam corporis quod quisquam reiciendis aut labore ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ut voluptates ipsa sunt id numquam fugiat, dolores obcaecati facere exercitationem doloribus inventore cumque quibusdam dolor alias ipsam earum, porro maiores? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quos. Nesciunt nobis obcaecati, unde perferendis voluptatem facere totam quasi temporibus, fugiat omnis, doloremque provident nihil minus et pariatur aspernatur saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sed quod repellendus officia aut quia fuga, incidunt in beatae sequi rerum! Minus voluptates doloribus nihil animi magnam vel, natus rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consequuntur sunt doloremque earum, ducimus eius laborum magni sint dolor quis! Animi aperiam maiores cupiditate, alias aliquid natus perferendis odit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, aperiam! Id sit sapiente, aliquam accusamus ducimus nam officia delectus repudiandae. Suscipit necessitatibus aliquam corporis quod quisquam reiciendis aut labore ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ut voluptates ipsa sunt id numquam fugiat, dolores obcaecati facere exercitationem doloribus inventore cumque quibusdam dolor alias ipsam earum, porro maiores? </p>
+
+</body>
+</html>

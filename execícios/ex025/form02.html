@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2.0</title>
+
+    <style>
+
+        body {
+            background-color: burlywood;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="iuser">Usuário:</label>
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="20" size="15" placeholder="usuário" autocomplete="name, nickname, username">
+        </p>
+
+        <p>
+            <label for="ipass">Senha:</label>
+            <input type="password" name="pass" id="ipass" required minlength="8" size="10" placeholder="senha" autocomplete="new-password, current-password">
+        </p>
+
+        <p>
+            <input type="submit" name="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+</body>
+</html>

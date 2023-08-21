@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Mais formulário</h1>
+        <form action="cadastro.php" method="post" autocomplete="on" >
+
+            <p>
+                <label for="iest">Estado</label>
+                <select name="estado" id="iest">
+
+                    <option value="escolha" style="text-align: center;">---Escolha---</option>
+
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+
+                    <optgroup label="Região Norte/Nordeste">
+                        <option value="BA">Bahia</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="PA">Pará</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="listprof" placeholder="Digite sua profissão">
+
+                <datalist id="listprof" >
+                    <option>Administrador</option>
+                    <option>Contador</option>
+                    <option>Desenvolvedor</option>
+                    <option>Professor</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="ims" >Mensagem</label>
+                <textarea name="msg" id="imsg" cols="60" rows="10">
+                </textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar"> 
+            </p>
+        </form>
+</body>
+</html>

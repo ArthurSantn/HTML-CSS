@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    background-color: #F7F7F7;
+    height: 400px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-top: 50px;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+
+    background-color: #4779E4;
+}
+
+.inputs {
+    display: flex;
+    margin: auto;
+    margin-top: 12px;
+    padding-right: 100px;
+    height: 30px;
+}
+
+#idnome {
+    margin-top: 30px;
+}
+
+#idmsg {
+    height: 80px;
+}
+
+#button {
+    display: flex;
+    margin: auto;
+    height: 35px;
+    padding: 0px 100px 0px 100px;
+    
+
+    border: transparent;
+    border-radius: 8px;
+    background-color: #4779E4;
+    color: white;
+}

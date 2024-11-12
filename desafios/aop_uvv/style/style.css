@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: url(../images/backgroud/sandwich-background2.png);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    height: 20vh;
+}
+
+nav#barra_de_navegação {
+    margin-top: -40px;
+    padding: 10px 0px 0px 25px;
+    height: 35px;
+
+    background-color: #c5932ef1;
+}
+
+.links {
+    margin-right: 20px;
+
+    font-size: 20px;
+
+    text-decoration: none;
+    color: white;
+    transition: 300ms;
+    transition-delay: 50ms;
+}
+
+.links:hover {
+    color: #E6B077;
+}

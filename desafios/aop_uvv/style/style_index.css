@@ -18,14 +18,11 @@
     --subtitulo: 'trends', Arial, Helvetica, sans-serif;
 }
 
-/* CORES 
-#A60303, #F20505, #D97904, #F2B705, #A9BF04
-*/
-
 
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -37,7 +34,7 @@ header {
 }
 
 h1#titulo {
-    color: #F2B705;
+    color: #89D99D;
     text-shadow: black 10px 7px 20px;
     font-family: var(--titulo);
 
@@ -51,7 +48,7 @@ nav#barra_de_navegação {
     padding: 10px 0px 0px 25px;
     height: 35px;
 
-    background-color: #d97904;
+    background-color: #0B2B40;
 }
 
 .links {
@@ -68,12 +65,13 @@ nav#barra_de_navegação {
 }
 
 .links:hover {
-    color: #ffe600;
+    color: #89D99D;
 }
 
 main {
     padding-top: 30px;
     margin: auto;
+    height: 100vh;
 }
 
 section#apresentacao {
@@ -81,7 +79,7 @@ section#apresentacao {
     margin: 100px;
     border-radius: 5px;
 
-    border: solid 4px #d9790434;
+    border: solid 4px #3b8c6e62;
     
 }
 
@@ -89,16 +87,13 @@ h2#sub_titulo_inicio {
     padding-top: 18px;
     text-align: center;
     padding-bottom: 20px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
 
     font-family: var(--subtitulo);
-    color: #F2B705;
+    color: #89D99D;
     font-weight: 100;
     font-size: 30px;
-    text-shadow: black 1px 1px 0px;
     
-    background-color: #d9790434;
+    background-color: #0B2B40;
 }
 
 #primeiro_p {
@@ -113,3 +108,38 @@ h2#sub_titulo_inicio {
     line-height: 25px;
     padding: 10px;
 }
+
+footer {
+    background-color: #0B2B40;
+    text-decoration: none;
+    
+    padding-top: 20px;
+    height: 30px;
+
+    text-align: center;
+    font-weight: 600;
+    color: white;
+
+}
+
+footer > p > a {
+    text-decoration: none;
+
+    text-decoration: none;
+    color: white;
+    transition: 300ms;
+    transition-delay: 50ms;
+    
+}
+
+footer > p > a:hover {
+    color: #318d8d;
+    text-shadow: rgba(0, 0, 0, 0.822) 1px 1px 10px;
+}
+
+/* Color Theme Swatches in Hex */
+.Northern-Lights-1-hex { color: #164773; }
+.Northern-Lights-2-hex { color: #0B2B40; }
+.Northern-Lights-3-hex { color: #1E5959; }
+.Northern-Lights-4-hex { color: #3B8C6E; }
+.Northern-Lights-5-hex { color: #89D99D; }

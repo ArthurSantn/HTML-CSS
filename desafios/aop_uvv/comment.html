@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./favicon/favicon.png" type="image/png">
-    <link rel="stylesheet" href="./style/style_coment.css">
+    <link rel="stylesheet" href="./style/style_comment.css">
     <title>Publicações</title>
 </head>
 <body>
@@ -17,35 +17,32 @@
         <a href="index.html" class="links">Início</a>
         <a href="prato_do_dia.html" class="links">Prato do dia</a>
         <a href="publi.html" class="links">Publicações</a>
-        <a href="coment.html" class="links">Discussões</a>
+        <a href="comment.html" class="links">Discussões</a>
         <a href="https://www.youtube.com/watch?v=cWvYmFTMoQ4" class="links">Contatos</a>
     </nav>
 
     <main>
-        <section class="form-section">
+        <section id="comments_area">
             <h2>Deixe seu comentário</h2>
-                <form class="comment-form" action="#">
                 <label for="name">Seu nome:</label>
-                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
-        
-                <label for="dish">Prato:</label>
-                <input type="text" id="dish" name="dish" placeholder="Digite o prato" required>
-        
+                <input type="text" id="nameid" name="name" placeholder="Digite seu nome" required>
+            <br>
+                <label for="food">Prato:</label>
+                <input type="text" id="foodid" name="dish" placeholder="Digite o prato" required>
+            <br>
                 <label for="comment">Comentário:</label>
-                <textarea id="comment" name="comment" rows="4" placeholder="Digite seu comentário" required></textarea>
-        
+                <textarea id="commentid" name="comment" rows="4" placeholder="Digite seu comentário" required></textarea>
                 <button type="submit">Enviar</button>
-              </form>
             </section>
         
         <section class="comments">
               <h2>Comentários</h2>
 
-                <h3>🍕 Pizza</h3>
+                <h3 class="comment"> &#x1F355 Pizza</h3>
                 <p>“A pizza é uma explosão de sabores em cada fatia, perfeita para compartilhar com amigos!”</p>
                 <span><strong>- João</strong></span>
 
-                <h3>🍔 Hambúrguer</h3>
+                <h3 class="comment">&#x1F354 Hambúrguer</h3>
                 <p>“Nada supera um hambúrguer suculento com bacon e queijo derretido.”</p>
                 <span><strong>- Maria</strong></span>
             </section>

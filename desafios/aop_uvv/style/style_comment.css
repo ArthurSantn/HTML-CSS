@@ -78,6 +78,28 @@ section {
     background-color: #1e595965;
 }
 
+.comment, label {
+    font-family: var(--subtitulo);
+    font-weight: 100;
+    color: #0B2B40;
+}
+
+input {
+    margin: 10px;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+#commentid {
+    margin: 10px;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+button {
+    
+}
+
 h2 {
     text-align: center;
     font-family: var(--subtitulo);
@@ -86,6 +108,10 @@ h2 {
     font-size: 35px;
 
     color: #0B2B40;
+}
+
+.comment {
+    padding: 10px;
 }
 
 footer {
